@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="38.812">
+  <properties />
+  
+  
+            <testcase name="BuyNow_exist" time="10.679" classname="com.xiaobaozi.pageCase.OrderCase" />
+                <testcase name="Login" time="8.933" classname="com.xiaobaozi.pageCase.OrderCase" />
+                <testcase name="BuyCourse" time="19.200" classname="com.xiaobaozi.pageCase.OrderCase" />
+      
+</testsuite>

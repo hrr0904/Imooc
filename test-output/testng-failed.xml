@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="979493932"/>
+  <parameter name="url3" value="https://coding.imooc.com/class/394.html"/>
+  <parameter name="url1" value="https://www.imooc.com/"/>
+  <parameter name="url2" value="https://coding.imooc.com/class/389.html"/>
+  <parameter name="username" value="979493932@qq.com"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.xiaobaozi.util.TestCaseReport"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.xiaobaozi.pageCase.CartCase">
+        <methods>
+          <include name="AddCart"/>
+          <include name="AfterClass"/>
+          <include name="AddCart_exist"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- com.xiaobaozi.pageCase.CartCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

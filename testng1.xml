@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.xiaobaozi.util.TestCaseReport" />
+	</listeners>
+	<test name="Test">
+		<parameter name="username" value="979493932@qq.com" />
+		<parameter name="password" value="979493932" />
+		<parameter name="url1" value="https://www.imooc.com/" />
+		<parameter name="url2" value="https://coding.imooc.com/class/389.html" />
+		<parameter name="url3" value="https://coding.imooc.com/class/394.html" />
+		<classes>
+			<class name="com.xiaobaozi.pageCase.LoginPageCase" />
+			<class name="com.xiaobaozi.pageCase.CartCase" />
+			<class name="com.xiaobaozi.pageCase.OrderCase" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
